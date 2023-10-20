@@ -12,7 +12,7 @@ const CreatePost = () => {
 
     const handleSubmit = async () => {
         console.log(blog);
-        const res = await fetch("http://localhost:7000/api/blog/create", {
+        const res = await fetch("https://blog-app-project-pi.vercel.app/api/blog/create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

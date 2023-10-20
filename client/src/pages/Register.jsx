@@ -14,7 +14,7 @@ const Register = () => {
 
   const handleSubmit = async () => {
     console.log(user);
-    const res = await fetch("http://localhost:7000/api/user/register", {
+    const res = await fetch("https://blog-app-project-pi.vercel.app/api/user/register", {
       method: "POST",
       headers:{
         "Content-Type": "application/json"
