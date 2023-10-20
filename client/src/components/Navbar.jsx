@@ -24,7 +24,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const fetchUser = async () => {
-      const res = await fetch("https://blog-app-project-pi.vercel.app/api/user/auth", {
+      const res = await fetch("https://blog-app-project-tau.vercel.app/api/user/auth", {
         method: "GET",
         headers: {
           token: localStorage.getItem("token")

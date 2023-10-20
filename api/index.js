@@ -13,7 +13,7 @@ const port = process.env.PORT;  //To get the port from .env to port variable
 app.use(express.json())
 app.use(cors(
     {
-        origin: ["https://blog-app-project-pi.vercel.app"],
+        origin: ["https://blog-app-alpha-two.vercel.app"], 
         methods: ["POST", "GET"],
         credentials: true
     }
