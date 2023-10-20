@@ -14,7 +14,7 @@ const Register = () => {
 
   const handleSubmit = async () => {
     console.log(user);
-    const res = await fetch("https://blog-app-project-tau.vercel.app/api/user/register", {
+    const res = await fetch("https://blog-app-project-tau.vercel.app/register", {
       method: "POST",
       headers:{
         "Content-Type": "application/json"

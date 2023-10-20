@@ -26,7 +26,7 @@ const DisplayPost = () => {
 
     useEffect(() => {
         const fetchData = async () => {
-            const res = await fetch("https://blog-app-project-tau.vercel.app/api/blog/", {
+            const res = await fetch("https://blog-app-project-tau.vercel.app", {
                 method: "GET",
                 headers: {
                     token: localStorage.getItem("token")
