@@ -11,12 +11,19 @@ const app = express(); //To create express app
 const port = process.env.PORT;  //To get the port from .env to port variable
 
 app.use(express.json())
-app.use(cors({credentials: true}))
+app.use(cors(
+    {
+        origin: ["https://blog-app-project-pi.vercel.app"],
+        methods: ["POST", "GET"],
+        credentials: true
+    }
+)
+)
 
 //using routes
 app.use("/api/user", UserRouter)
 app.use("/api/blog", BlogRouter)
 
 app.listen(port, () => {
-    console.log("App is running on port: ",port);  //To let us know, app is started
+    console.log("App is running on port: ", port);  //To let us know, app is started
 })
